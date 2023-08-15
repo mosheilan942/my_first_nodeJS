@@ -1,12 +1,12 @@
 
 let str = `Lorem Ipsum is simply dummy text of the printing and typesetting 
  Lorem Ipsum is simply dummy text of the printing and typesetting`;
-let arr = str.split(" ")
-let obj = {}
-let uniq_arr = []
+let arr = str.split(" ");
+let obj = {};
+let uniq_arr = [];
 arr.forEach((word, index) => {
-    obj[`${word}`] ? null : uniq_arr.push(word)
-    obj[`${word}`] = index
+    obj[`${word}`] ? null : uniq_arr.push(word);
+    obj[`${word}`] = index;
 });
 console.log(uniq_arr);
 
@@ -17,7 +17,7 @@ for (let i = 0; i < arr.length/2; i++) {
     [first, last] = [last, first];
     arr[i] = first;
     arr[j] = last;
-    j = j-1 
+    j = j-1;
 }
 
 console.log(arr);
